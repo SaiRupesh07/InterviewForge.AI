@@ -84,8 +84,6 @@ function Step2Interview({ interviewData, onFinish }) {
 
   /* ---------------- SPEAK FUNCTION ---------------- */
   const speakText = (text) => {
-       if (!text) return 
-       
     return new Promise((resolve) => {
       if (!window.speechSynthesis || !selectedVoice) {
         resolve();

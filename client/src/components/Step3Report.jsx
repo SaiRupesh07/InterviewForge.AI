@@ -9,27 +9,13 @@ import jsPDF from "jspdf"
 import autoTable from "jspdf-autotable"
 
 function Step3Report({ report }) {
-  if (!report || !report.questionWiseScore || report.questionWiseScore.length === 0) {
-  return (
-    <div className="min-h-screen flex flex-col items-center justify-center gap-4 text-center px-6">
-      <h2 className="text-2xl font-semibold text-red-500">
-        Report Not Available
-      </h2>
-
-      <p className="text-gray-600 max-w-md">
-        You did not answer all interview questions, so the performance report
-        could not be generated.
-      </p>
-
-      <p className="text-gray-400">
-        Please complete all questions next time.  
-        <span className="font-medium text-emerald-600">
-          Better luck 👍
-        </span>
-      </p>
-    </div>
-  );
-}
+  if (!report) {
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        <p className="text-gray-500 text-lg">Loading Report...</p>
+      </div>
+    );
+  }
   const navigate = useNavigate()
   const {
     finalScore = 0,
