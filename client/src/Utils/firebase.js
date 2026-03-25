@@ -2,9 +2,9 @@ import { initializeApp } from "firebase/app";
 import {getAuth, GoogleAuthProvider} from "firebase/auth"
 const firebaseConfig = {
   apiKey: import.meta.env.VITE_FIREBASE_APIKEY,
-  authDomain: "interviewiq-ba6ba.firebaseapp.com",
-  projectId: "interviewiq-ba6ba",
-  storageBucket: "interviewiq-ba6ba.firebasestorage.app",
+   authDomain: "ai-interview-44c7c.firebaseapp.com",
+  projectId: "ai-interview-44c7c",
+  storageBucket: "ai-interview-44c7c.appspot.com",
   messagingSenderId: "862159592601",
   appId: "1:862159592601:web:7308d702cd708076ddec08"
 };
